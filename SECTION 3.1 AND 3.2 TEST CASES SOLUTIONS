@@ -1,0 +1,6 @@
+3.1 Solution 1: Live Multiplayer Party Game
+Description: Our first idea was a live, multiplayer social game where people play together at the exact same time (like a digital word-guessing game). The application would manage game rounds, assign roles, and track scores instantly over the web. ocx Reason for Rejection: From a testing perspective, a live multiplayer game is too unpredictable. Because multiple users are clicking things at the exact same time, it is very hard to write simple, repeatable tests for the code. Testing this kind of live data would take too much time and put us at risk of missing our two-month deadline.
+
+3.2 Solution 2: Multi-Clan "God Mode" Simulator
+○ Description: To fix the live-player issue, we switched to a turn-based strategy game. In this version, one player would manually control all the resources, armies, and actions for three different clans (Arian, Jata, and Aleen) on the map at the same time. 
+Reason for Rejection: While a turn-based game is easier to test, controlling three clans at once created too many variables. When we tried to map out the required testing techniques, like Decision Tables and Boundary Value testing, the number of possible test cases was way too high. It would be nearly impossible to write tests for every possible combination of three clans interacting with each other before the project is due.
